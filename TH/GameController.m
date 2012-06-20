@@ -3,7 +3,7 @@
 //  TH
 //
 //  Created by Benedikt Beckmann on 20.06.12.
-//  Copyright (c) 2012 BioApps. All rights reserved.
+//  Copyright (c) 2012 BB. All rights reserved.
 //
 
 #import "GameController.h"
