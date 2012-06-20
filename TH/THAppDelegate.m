@@ -7,6 +7,8 @@
 //
 
 #import "THAppDelegate.h"
+#import "GCHelper.h"
+#import "GameController.h"
 
 @implementation THAppDelegate
 
@@ -14,7 +16,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //start up the central game control
+    [GameController sharedInstance];
+    
+    [[GCHelper sharedInstance] authenticateLocalUser];
     return YES;
 }
 							
