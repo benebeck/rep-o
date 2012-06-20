@@ -8,9 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+@class Player;
+
+@protocol PlayerDelegate <NSObject>
+
+-(void)changePlayerState;
+
+@end
+
+
 @interface Player : NSObject
 
-
+@property (nonatomic, weak) id <PlayerDelegate> delegate;
 
 @property (weak, nonatomic) NSString *playerName;
 @property (nonatomic) int playerId;

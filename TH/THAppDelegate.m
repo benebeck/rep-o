@@ -10,16 +10,27 @@
 #import "GCHelper.h"
 #import "GameController.h"
 
-@implementation THAppDelegate
+@implementation THAppDelegate{
+    NSMutableArray *possiblegameStates;
+}
 
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //start up the central game control
-    [GameController sharedInstance];
+    //list of possible game states
+    possiblegameStates = [NSMutableArray arrayWithObjects:@"INACTIVE",@"ACTIVE",@"DEALER",@"SMALL_BLIND",@"BIG_BLIND",@"CALL",@"FOLD", nil];
     
+
+    
+    //start up the central game control
+    GameController *gameController = [GameController sharedInstance];
+    gameController.gameStates = possiblegameStates;
+    
+    //start GameCenter
     [[GCHelper sharedInstance] authenticateLocalUser];
+    
+    
     return YES;
 }
 							

@@ -12,9 +12,10 @@
 #import "Player.h"
 //#import "PackOfCards.h"
 
-@interface GameController : NSObject
+@interface GameController : NSObject<PlayerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *playerList;
+@property (nonatomic, strong) NSMutableArray *gameStates;
 @property (nonatomic) int activePlayer;
 @property (nonatomic) int maxPlayers;
 @property (nonatomic) int bigBlind;

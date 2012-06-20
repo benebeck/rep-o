@@ -9,14 +9,13 @@
 #import "GameController.h"
 
 @interface GameController ()
--(void)singletonSetup;
--(void)initPlayers;
 
 @end
 
 @implementation GameController
 
 @synthesize playerList = _playerList;
+@synthesize gameStates = _gameStates;
 @synthesize activePlayer = _activePlayer;
 @synthesize maxPlayers = _maxPlayers;
 @synthesize bigBlind = _bigBlind;
@@ -36,28 +35,10 @@ static GameController *sharedInstance = nil;
     if (!sharedInstance){
         sharedInstance = [[GameController alloc] init];
     }
+    NSLog(@"I am alive!");
     return sharedInstance;
 }
 
-//Setup sharedInstance when game starts. Dummy setup method until we have the GC running or other user-specific data
--(void) singletonSetup{
-    //# of players, replace with player
-    NSMutableArray *players = [NSMutableArray arrayWithCapacity:10]; 
-    
-    [players addObject:[NSNumber numberWithInt:5]];
-    self.playerList = players;
-    self.maxPlayers = 5;
-    self.bigBlind = 5;
-    self.totalMoney = 1000;
-}
-
-
-//init Players
--(void)initPlayers{
-    for(NSNumber *myStr in self.playerList) {
-        NSLog(myStr);
-    }
-}
 
 
 #pragma mark Game methods
@@ -78,5 +59,24 @@ static GameController *sharedInstance = nil;
     
     return NO;
 }
+
+
+
+
+
+#pragma mark PlayerDelegate
+
+-(void)changePlayerState{
+    
+}
+
+
+
+
+
+
+
+
+
 
 @end
