@@ -12,7 +12,7 @@
 
 @protocol PlayerDelegate <NSObject>
 
--(void)changePlayerState;
+-(void)changePlayerState:(NSString *)state forPlayer:(NSNumber *)playerNumber;
 
 @end
 
@@ -25,7 +25,7 @@
 @property (nonatomic) int playerId;
 @property (nonatomic) int moneyRest; 
 //@property () avatar
-@property (weak, nonatomic) NSArray *playerState; 
+@property (weak, nonatomic) NSString *playerState; 
 @property (nonatomic) int playerRound;
 @property (weak, nonatomic) NSArray *openCards;
 @property (weak, nonatomic) NSArray *twoCards;

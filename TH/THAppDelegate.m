@@ -25,6 +25,7 @@
     
     //start up the central game control
     GameController *gameController = [GameController sharedInstance];
+    [gameController raisePlayers];
     gameController.gameStates = possiblegameStates;
     
     //start GameCenter

@@ -26,6 +26,7 @@
 
 +(GameController *)sharedInstance;
 
+-(void)raisePlayers;
 -(void)activateNextPlayer;
 -(int)getRoundNr;
 -(void)setRoundNr;

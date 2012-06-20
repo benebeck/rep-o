@@ -10,6 +10,8 @@
 
 @interface GameController ()
 
+
+
 @end
 
 @implementation GameController
@@ -35,10 +37,28 @@ static GameController *sharedInstance = nil;
     if (!sharedInstance){
         sharedInstance = [[GameController alloc] init];
     }
+    //hardcoded dummy values
+    sharedInstance.maxPlayers = 5;
+    sharedInstance.totalMoney = 1000;
     NSLog(@"I am alive!");
     return sharedInstance;
 }
 
+
+
+
+//method to instantiate the players after GameControl has been started
+-(void)raisePlayers{
+    //dummy players
+    Player *player1 = [[Player alloc] init];
+    Player *player2 = [[Player alloc] init];
+    Player *player3 = [[Player alloc] init];
+    Player *player4 = [[Player alloc] init];
+    Player *player5 = [[Player alloc] init];
+    
+    NSMutableArray *list = [NSMutableArray arrayWithObjects:player1,player2,player3,player4,player5, nil];
+    self.playerList = list;
+}
 
 
 #pragma mark Game methods
@@ -66,7 +86,8 @@ static GameController *sharedInstance = nil;
 
 #pragma mark PlayerDelegate
 
--(void)changePlayerState{
+-(void)changePlayerState:(NSString *)state forPlayer:(NSNumber *)playerNumber{
+    
     
 }
 
