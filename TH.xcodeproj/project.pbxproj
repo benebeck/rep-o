@@ -22,14 +22,14 @@
 		B79DF1861591C3B200085A15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B79DF1881591C3B200085A15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B79DF18A1591C3B200085A15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B79DF18E1591C3B200085A15 /* TH-Info.plist */ = {isa = PBXFileReference; path = "TH-Info.plist"; sourceTree = "<group>"; };
+		B79DF18E1591C3B200085A15 /* TH-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TH-Info.plist"; sourceTree = "<group>"; };
 		B79DF1901591C3B200085A15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B79DF1921591C3B200085A15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B79DF1941591C3B200085A15 /* TH-Prefix.pch */ = {isa = PBXFileReference; path = "TH-Prefix.pch"; sourceTree = "<group>"; };
-		B79DF1951591C3B200085A15 /* THAppDelegate.h */ = {isa = PBXFileReference; path = THAppDelegate.h; sourceTree = "<group>"; };
+		B79DF1941591C3B200085A15 /* TH-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TH-Prefix.pch"; sourceTree = "<group>"; };
+		B79DF1951591C3B200085A15 /* THAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THAppDelegate.h; sourceTree = "<group>"; };
 		B79DF1961591C3B200085A15 /* THAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THAppDelegate.m; sourceTree = "<group>"; };
 		B79DF1991591C3B200085A15 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B79DF19B1591C3B200085A15 /* THViewController.h */ = {isa = PBXFileReference; path = THViewController.h; sourceTree = "<group>"; };
+		B79DF19B1591C3B200085A15 /* THViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THViewController.h; sourceTree = "<group>"; };
 		B79DF19C1591C3B200085A15 /* THViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
