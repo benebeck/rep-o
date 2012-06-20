@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B72BB39F1591C11F005061BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72BB39E1591C11F005061BD /* UIKit.framework */; };
+		B72BB3A11591C11F005061BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72BB3A01591C11F005061BD /* Foundation.framework */; };
+		B72BB3A31591C11F005061BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72BB3A21591C11F005061BD /* CoreGraphics.framework */; };
+		B72BB3A91591C11F005061BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B72BB3A71591C11F005061BD /* InfoPlist.strings */; };
+		B72BB3AB1591C11F005061BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B72BB3AA1591C11F005061BD /* main.m */; };
+		B72BB3AF1591C11F005061BD /* TexasHoldemAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B72BB3AE1591C11F005061BD /* TexasHoldemAppDelegate.m */; };
+		B72BB3B21591C11F005061BD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72BB3B01591C11F005061BD /* MainStoryboard.storyboard */; };
+		B72BB3B51591C11F005061BD /* TexasHoldemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72BB3B41591C11F005061BD /* TexasHoldemViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B72BB39A1591C11F005061BD /* TexasHoldem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TexasHoldem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B72BB39E1591C11F005061BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B72BB3A01591C11F005061BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B72BB3A21591C11F005061BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B72BB3A61591C11F005061BD /* TexasHoldem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TexasHoldem-Info.plist"; sourceTree = "<group>"; };
+		B72BB3A81591C11F005061BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B72BB3AA1591C11F005061BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B72BB3AC1591C11F005061BD /* TexasHoldem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TexasHoldem-Prefix.pch"; sourceTree = "<group>"; };
+		B72BB3AD1591C11F005061BD /* TexasHoldemAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TexasHoldemAppDelegate.h; sourceTree = "<group>"; };
+		B72BB3AE1591C11F005061BD /* TexasHoldemAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TexasHoldemAppDelegate.m; sourceTree = "<group>"; };
+		B72BB3B11591C11F005061BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B72BB3B31591C11F005061BD /* TexasHoldemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TexasHoldemViewController.h; sourceTree = "<group>"; };
+		B72BB3B41591C11F005061BD /* TexasHoldemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TexasHoldemViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B72BB3971591C11F005061BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72BB39F1591C11F005061BD /* UIKit.framework in Frameworks */,
+				B72BB3A11591C11F005061BD /* Foundation.framework in Frameworks */,
+				B72BB3A31591C11F005061BD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B72BB38F1591C11F005061BD = {
+			isa = PBXGroup;
+			children = (
+				B72BB3A41591C11F005061BD /* TexasHoldem */,
+				B72BB39D1591C11F005061BD /* Frameworks */,
+				B72BB39B1591C11F005061BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B72BB39B1591C11F005061BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B72BB39A1591C11F005061BD /* TexasHoldem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B72BB39D1591C11F005061BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B72BB39E1591C11F005061BD /* UIKit.framework */,
+				B72BB3A01591C11F005061BD /* Foundation.framework */,
+				B72BB3A21591C11F005061BD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B72BB3A41591C11F005061BD /* TexasHoldem */ = {
+			isa = PBXGroup;
+			children = (
+				B72BB3AD1591C11F005061BD /* TexasHoldemAppDelegate.h */,
+				B72BB3AE1591C11F005061BD /* TexasHoldemAppDelegate.m */,
+				B72BB3B01591C11F005061BD /* MainStoryboard.storyboard */,
+				B72BB3B31591C11F005061BD /* TexasHoldemViewController.h */,
+				B72BB3B41591C11F005061BD /* TexasHoldemViewController.m */,
+				B72BB3A51591C11F005061BD /* Supporting Files */,
+			);
+			path = TexasHoldem;
+			sourceTree = "<group>";
+		};
+		B72BB3A51591C11F005061BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B72BB3A61591C11F005061BD /* TexasHoldem-Info.plist */,
+				B72BB3A71591C11F005061BD /* InfoPlist.strings */,
+				B72BB3AA1591C11F005061BD /* main.m */,
+				B72BB3AC1591C11F005061BD /* TexasHoldem-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B72BB3991591C11F005061BD /* TexasHoldem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B72BB3B81591C11F005061BD /* Build configuration list for PBXNativeTarget "TexasHoldem" */;
+			buildPhases = (
+				B72BB3961591C11F005061BD /* Sources */,
+				B72BB3971591C11F005061BD /* Frameworks */,
+				B72BB3981591C11F005061BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TexasHoldem;
+			productName = TexasHoldem;
+			productReference = B72BB39A1591C11F005061BD /* TexasHoldem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B72BB3911591C11F005061BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TexasHoldem;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = BioApps;
+			};
+			buildConfigurationList = B72BB3941591C11F005061BD /* Build configuration list for PBXProject "TexasHoldem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B72BB38F1591C11F005061BD;
+			productRefGroup = B72BB39B1591C11F005061BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B72BB3991591C11F005061BD /* TexasHoldem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B72BB3981591C11F005061BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72BB3A91591C11F005061BD /* InfoPlist.strings in Resources */,
+				B72BB3B21591C11F005061BD /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B72BB3961591C11F005061BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72BB3AB1591C11F005061BD /* main.m in Sources */,
+				B72BB3AF1591C11F005061BD /* TexasHoldemAppDelegate.m in Sources */,
+				B72BB3B51591C11F005061BD /* TexasHoldemViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B72BB3A71591C11F005061BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B72BB3A81591C11F005061BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B72BB3B01591C11F005061BD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B72BB3B11591C11F005061BD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B72BB3B61591C11F005061BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B72BB3B71591C11F005061BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B72BB3B91591C11F005061BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TexasHoldem/TexasHoldem-Prefix.pch";
+				INFOPLIST_FILE = "TexasHoldem/TexasHoldem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B72BB3BA1591C11F005061BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TexasHoldem/TexasHoldem-Prefix.pch";
+				INFOPLIST_FILE = "TexasHoldem/TexasHoldem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B72BB3941591C11F005061BD /* Build configuration list for PBXProject "TexasHoldem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B72BB3B61591C11F005061BD /* Debug */,
+				B72BB3B71591C11F005061BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B72BB3B81591C11F005061BD /* Build configuration list for PBXNativeTarget "TexasHoldem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B72BB3B91591C11F005061BD /* Debug */,
+				B72BB3BA1591C11F005061BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B72BB3911591C11F005061BD /* Project object */;
+}
