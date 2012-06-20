@@ -40,7 +40,7 @@ static GameController *sharedInstance = nil;
     //hardcoded dummy values
     sharedInstance.maxPlayers = 5;
     sharedInstance.totalMoney = 1000;
-    NSLog(@"I am alive!");
+    NSLog(@"GameControl is up...");
     return sharedInstance;
 }
 
@@ -49,15 +49,34 @@ static GameController *sharedInstance = nil;
 
 //method to instantiate the players after GameControl has been started
 -(void)raisePlayers{
-    //dummy players
-    Player *player1 = [[Player alloc] init];
-    Player *player2 = [[Player alloc] init];
-    Player *player3 = [[Player alloc] init];
-    Player *player4 = [[Player alloc] init];
-    Player *player5 = [[Player alloc] init];
     
-    NSMutableArray *list = [NSMutableArray arrayWithObjects:player1,player2,player3,player4,player5, nil];
+    //dummy list
+    NSMutableArray *list = [NSMutableArray arrayWithCapacity:5];
+    
+    //foreach-Schleife : hier müssten die mitspieler rein
+    Player *player1 = [[Player alloc] init];
+    player1.playerId = @"Player1";
+    [list addObject:player1];
+    Player *player2 = [[Player alloc] init];
+    player2.playerId = @"Player2";
+    [list addObject:player2];
+    Player *player3 = [[Player alloc] init];
+    player3.playerId = @"Player3";
+    [list addObject:player3];
+    Player *player4 = [[Player alloc] init];
+    player4.playerId = @"Player4";
+    [list addObject:player4];
+    Player *player5 = [[Player alloc] init];
+    player5.playerId = @"Player5";
+    [list addObject:player5];
+
+    
     self.playerList = list;
+    
+    for (id element in self.playerList) {
+        [self changePlayerState:@"INACTIVE" forPlayer:element];
+        //NSLog(@"Player: %@", [element playerId]);
+    }
 }
 
 
@@ -86,13 +105,12 @@ static GameController *sharedInstance = nil;
 
 #pragma mark PlayerDelegate
 
--(void)changePlayerState:(NSString *)state forPlayer:(NSNumber *)playerNumber{
-    
+-(void)changePlayerState:(NSString *)state forPlayer:(NSObject *)player{
+    Player *pl = player;
+    NSLog(@"Changed State of %@", [pl playerId]);
+    NSLog(@"to %@", state);
     
 }
-
-
-
 
 
 
